@@ -1,0 +1,12 @@
+Source: ros-galactic-launch-param-builder
+Section: misc
+Priority: optional
+Maintainer: Jafar Abdi <jafar@picknik.ai>
+Build-Depends: debhelper (>= 9.0.0), python3-pytest, ros-galactic-ament-copyright, ros-galactic-ros-workspace, python3-all, python3-setuptools
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-galactic-launch-param-builder
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, python3-yaml, ros-galactic-ament-index-python, ros-galactic-rclpy, ros-galactic-xacro, ros-galactic-ros-workspace
+Description: Python library for loading parameters in launch files
