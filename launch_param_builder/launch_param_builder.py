@@ -40,6 +40,7 @@ class ParameterBuilder(object):
 
     def __init__(self, package_name: str):
         self._package_path = Path(get_package_share_directory(package_name))
+        self._parameters = {}
 
     def yaml(self, file_path: str, parameter_namespace: str = None):
         if parameter_namespace:
@@ -69,6 +70,10 @@ class ParameterBuilder(object):
 
     def parameter(self, parameter_name: str, parameter_value: ParameterValueType):
         self._parameters[parameter_name] = parameter_value
+        return self
+
+    def path_parameter(self, parameter_name: str, file_path: str):
+        self._parameters[parameter_name] = str(self._package_path / file_path)
         return self
 
     def to_dict(self):
