@@ -102,4 +102,5 @@ tracks:
     ros_distro: rolling
     vcs_type: git
     vcs_uri: https://github.com/PickNikRobotics/launch_param_builder.git
-    version: :{auto}
+    version: 0.1.1
+    version_saved: :{auto}
