@@ -1,0 +1,16 @@
+ros-iron-launch-param-builder (0.1.1-3bullseye) bullseye; urgency=high
+
+  * Reset parameters explicity when object is constructed to remove copied data. (#4 <https://github.com/PickNikRobotics/launch_param_builder/issues/4>)
+  * Add path_parameter to ParameterBuilder & get_path to utils (#3 <https://github.com/PickNikRobotics/launch_param_builder/issues/3>)
+  * Contributors: Jafar, Denis Štogl, Vatan Aksoy Tezer, livanov93
+
+ -- Jafar Abdi <jafar@picknik.ai>  Wed, 25 May 2022 16:00:00 -0000
+
+ros-iron-launch-param-builder (0.1.0-3bullseye) bullseye; urgency=high
+
+  * First commit
+  * Contributors: Jafar Abdi
+
+ -- Jafar Abdi <jafar@picknik.ai>  Thu, 20 Jan 2022 16:00:00 -0000
+
+
