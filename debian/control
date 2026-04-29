@@ -1,0 +1,12 @@
+Source: ros-lyrical-launch-param-builder
+Section: misc
+Priority: optional
+Maintainer: Jafar Abdi <jafar@picknik.ai>
+Build-Depends: debhelper (>= 9.0.0), python3-pytest <!nocheck>, ros-lyrical-ament-copyright <!nocheck>, ros-lyrical-ros-workspace, python3-all, python3-setuptools, dh-python
+Homepage: https://index.ros.org/p/launch_param_builder/#lyrical
+Standards-Version: 3.9.2
+
+Package: ros-lyrical-launch-param-builder
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, python3-yaml, ros-lyrical-ament-index-python, ros-lyrical-rclpy, ros-lyrical-xacro, ros-lyrical-ros-workspace
+Description: Python library for loading parameters in launch files
